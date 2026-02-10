@@ -66,10 +66,31 @@ const genreLinks = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  {
+    openInNewTab: true,
+    icon: Facebook,
+    href: "https://www.facebook.com/fb.freelancerlaju",
+    label: "Facebook",
+  },
+
+  {
+    openInNewTab: true,
+    icon: Twitter,
+    href: "https://www.x.com/freelancerlaju",
+    label: "Twitter",
+  },
+  {
+    openInNewTab: true,
+    icon: Instagram,
+    href: "https://www.instagram.com/freelancerlaju",
+    label: "Instagram",
+  },
+  {
+    openInNewTab: true,
+    icon: Youtube,
+    href: "https://www.youtube.com/@freelancerlaju",
+    label: "YouTube",
+  },
 ];
 
 const Information = ({ contact }: { contact?: boolean }) => {
@@ -213,7 +234,7 @@ const Footer = () => {
             <div className="space-y-2 pt-2">
               <div className="flex items-center gap-2 text-sm">
                 <Phone className="h-3.5 w-3.5 text-primary" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+880 1302-144805</span>
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <Mail className="h-3.5 w-3.5 text-primary" />
@@ -221,7 +242,7 @@ const Footer = () => {
                   href="mailto:contact@moviestudio.com"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  contact@moviestudio.com
+                  freelancerlaju@gmail.com
                 </a>
               </div>
             </div>
@@ -232,9 +253,9 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border/50">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground text-center md:text-left flex items-center gap-1.5">
-              © {new Date().getFullYear()} Movie Studio. Made with
+              © {new Date().getFullYear()} Movie Studio.
               <Heart className="h-3.5 w-3.5 text-red-500 fill-red-500 animate-pulse" />
-              by developers
+              Develop by freelancerlaju
             </p>
             <div className="flex items-center gap-6">
               <Link
